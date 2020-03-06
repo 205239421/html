@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <style type="text/css">
+        #box2 {
+            width: 350px;
+            height: 400px;
+            border: 1px solid black;
+        }
+        
+        span.title {
+            display: block;
+            width: 100px;
+            height: 30px;
+            position: relative;
+            top: -15px;
+            left: 20px;
+            text-align: center;
+            background: white;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box1">
+        <h1>学生信息</h1>
+    </div>
+    <div id="box2">
+        <span class="title">学生档案</span>
+        <div id="box3">
+            <div>姓名：</div>
+            <input type="text" value="郭明泽" style="width:300px;" />
+            <span style="color: red;">*</span>
+            <div>学号：</div>
+            <input type="text" value="2018011670" style="width:300px;" />
+            <span style="color: red;">*</span>
+            <div>手机号码：</div>
+            <input type="text" value="15948276008" style="width:300px;" />
+            <span style="color: red;">*</span>
+            <div>邮箱地址：</div>
+            <input type="text" value="710853713@qq.com" style="width:300px;" />
+            <span style="color: red;">*</span>
+            <div>录取学校：</div>
+            <input type="text" list="url_list" name="text" style="width:300px;" />
+            <datalist id="url_list">
+                    <option value="河北师范大学">
+                    <option value="XXXXX">
+                    <option value="XXXXX">
+                    </datalist>
+            <div>入学成绩：</div>
+            <input type="text" style="width:300px;" />
+            <div>入学时间：</div>
+            <input type="text" value="年/月/日" style="width:300px;" />
+            <div id="box4">
+                <input type="submit" style="width:300px;background-color: lightgray;" />
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+</script>
+
+</html>
